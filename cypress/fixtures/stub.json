@@ -1,0 +1,24 @@
+{
+    "url": "http://url.com",
+
+    "creds": {
+        "http": {
+            "username": "user",
+            "password": "********"
+        },
+        "user_login": {
+            "username": "anujay.kumar@email.com",
+            "password": "Password@1234"
+        }
+    },
+    "pages": {
+        "home": {
+            "locale": "en-ca",
+            "keyword": "Credit Card",
+            "protocolOptions": ["http", "https"],
+            "domain": "www.nerdwallet.com",
+            "defaultDomainTyle": "domain",
+            "domainType": ["Domain", "Url"]
+        }
+    }
+}

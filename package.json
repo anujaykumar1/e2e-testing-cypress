@@ -1,0 +1,16 @@
+{
+    "name": "alps-e2e-testing",
+    "version": "1.0.0",
+    "description": "This application is use to automate the alps ui flow",
+    "main": "index.js",
+    "scripts": {
+        "test": "e2e",
+        "e2e": "cypress open"
+    },
+    "author": "anujay.kumar@iquanti.com",
+    "license": "ISC",
+    "devDependencies": {
+        "cypress": "^3.8.0",
+        "prettier": "^1.19.1"
+    }
+}

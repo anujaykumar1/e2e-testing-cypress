@@ -1,0 +1,12 @@
+{
+    "whiteListedCookiesKey": [
+       
+        "Domain",
+       
+        "expires",
+        "httponly",
+        "Max-Age",
+        "Path"
+    ],
+    "whiteListLocale": true
+}
