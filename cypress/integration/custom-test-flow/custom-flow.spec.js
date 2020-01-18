@@ -2,7 +2,7 @@
 import Config from "../../../app-config.json";
 
 describe("realtime-simulation flow", () => {
-    let tenant_list = [];
+    let shared_list = [];
 
     beforeEach(function() {
         cy.fixture("stub").as("stub");
@@ -52,13 +52,13 @@ describe("realtime-simulation flow", () => {
             /**
              * Tenant code should be 1 for my loggedIn user
              */
-            expect(resp.response.body.tenant_list.length).equal(1);
+            expect(resp.response.body.shared_list.length).equal(1);
         });
         cy.wait("@localeList", { timeout: 15000 });
         cy.get("@localeList").then(function(resp) {
             expect(resp.status).equal(200);
             console.log("Response", resp);
-            tenant_list = resp.response.body;
+            shared_list = resp.response.body;
             expect(resp.response.body.length).greaterThan(0);
         });
     });
@@ -73,7 +73,7 @@ describe("realtime-simulation flow", () => {
 
         cy.get(".css-1qpdzfw-menu")
             .find(".css-jb6glx-option")
-            .should("have.length", tenant_list.length - 1);
+            .should("have.length", shared_list.length - 1);
     });
 
     it("Tenant list should be scrollable", function() {
