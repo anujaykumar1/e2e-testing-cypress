@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "e2e",
-        "e2e": "cypress open"
+        "e2e": "npx cypress run"
     },
     "author": "anujay.kumar@iquanti.com",
     "license": "ISC",
